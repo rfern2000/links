@@ -1,2 +1,3 @@
-git clone https://alexander.q.quintero%40oracle.com@rnlpm99dev-aucrnph01.developer.ocp.oraclecloud.com/rnlpm99dev-aucrnph01/s/rnlpm99dev-aucrnph01_rnp_2703/scm/rnp.git
-git login phx.ocir.io -u idn2y0witocj/oracleidentitycloudservice/alexander.q.quintero@oracle.com -p 'VcuNC3+mp;E+2;R#bBgM'
+#git clone https://alexander.q.quintero%40oracle.com@rnlpm99dev-aucrnph01.developer.ocp.oraclecloud.com/rnlpm99dev-aucrnph01/s/rnlpm99dev-aucrnph01_rnp_2703/scm/rnp.git
+docker login phx.ocir.io -u idn2y0witocj/oracleidentitycloudservice/alexander.q.quintero@oracle.com -p 'VcuNC3+mp;E+2;R#bBgM'
+docker tag rnpweb:inicial phx.ocir.io/idn2y0witocj/rnpweb:inicial

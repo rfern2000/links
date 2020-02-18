@@ -1,0 +1,10 @@
+git clone https://alexander.q.quintero%40oracle.com@rnlpm99dev-aucrnph01.developer.ocp.oraclecloud.com/rnlpm99dev-aucrnph01/s/rnlpm99dev-aucrnph01_rnp_2703/scm/users.git
+cd users
+git checkout develop
+cd ..
+git clone https://alexander.q.quintero%40oracle.com@rnlpm99dev-aucrnph01.developer.ocp.oraclecloud.com/rnlpm99dev-aucrnph01/s/rnlpm99dev-aucrnph01_rnp_2703/scm/dBAccess.git
+cd dBAccess
+git checkout develop
+cd ..
+cp users/DockerfileUsers Dockerfile
+

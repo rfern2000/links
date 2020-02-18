@@ -1,4 +1,4 @@
-git clone https://alexander.q.quintero%40oracle.com@rnlpm99dev-aucrnph01.developer.ocp.oraclecloud.com/rnlpm99dev-aucrnph01/s/rnlpm99dev-aucrnph01_rnp_2703/scm/book.git
+git clone alexander.q.quintero@oracle.com:Alquinter000@https://alexander.q.quintero%40oracle.com@rnlpm99dev-aucrnph01.developer.ocp.oraclecloud.com/rnlpm99dev-aucrnph01/s/rnlpm99dev-aucrnph01_rnp_2703/scm/book.git
 cd book
 git checkout develop
 cd ..

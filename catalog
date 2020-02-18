@@ -1,0 +1,17 @@
+git clone https://alexander.q.quintero%40oracle.com@rnlpm99dev-aucrnph01.developer.ocp.oraclecloud.com/rnlpm99dev-aucrnph01/s/rnlpm99dev-aucrnph01_rnp_2703/scm/catalogs.git
+cd catalogs
+git checkout develop
+cd ..
+git clone https://alexander.q.quintero%40oracle.com@rnlpm99dev-aucrnph01.developer.ocp.oraclecloud.com/rnlpm99dev-aucrnph01/s/rnlpm99dev-aucrnph01_rnp_2703/scm/dBAccess.git
+cd dBAccess
+git checkout develop
+cd ..
+git clone https://alexander.q.quintero%40oracle.com@rnlpm99dev-aucrnph01.developer.ocp.oraclecloud.com/rnlpm99dev-aucrnph01/s/rnlpm99dev-aucrnph01_rnp_2703/scm/person.git
+cd person
+git checkout develop
+cd ..
+git clone https://alexander.q.quintero%40oracle.com@rnlpm99dev-aucrnph01.developer.ocp.oraclecloud.com/rnlpm99dev-aucrnph01/s/rnlpm99dev-aucrnph01_rnp_2703/scm/regionalDivisions.git
+cd regionalDivisions
+git checkout develop
+cd ..
+copy catalogs\DockerfileCatalogs Dockerfile

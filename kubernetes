@@ -1,0 +1,4 @@
+#
+set HOME="/home/alexander_"
+oci ce cluster create-kubeconfig --cluster-id ocid1.cluster.oc1.phx.aaaaaaaaafqtszjsme2dimrqgnqwmylfgzsdintggq2domjtmcydaoldgyyg --file $HOME/.kube/config --region us-phoenix-1 --token-version 2.0.0 
+export KUBECONFIG=$HOME/.kube/config

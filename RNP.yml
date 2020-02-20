@@ -1,14 +1,22 @@
-apiVersion: v1
-kind:Pod
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-   name: rnp
+  name: rpnweb
 spec:
+  selector:
+    matchLabels:
+      app: rpnweb
+  replicas: 1 
+  template: 
+    metadata:
+      labels:
+        app: rpnweb
+    spec:
       containers:
-      - name: rnp
-    # enter the path to your image, be sure to include the correct region prefix    
+      - name: rpnweb
         image: phx.ocir.io/idn2y0witocj/project01/rnpweb:inicial
         ports:
-        - containerPort: 80
+        - containerPort: 8009
       imagePullSecrets:
     # enter the name of the secret you created  
       - name: ocirsecret

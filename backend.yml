@@ -16,7 +16,7 @@ spec:
       - name: rpnweb
         image: phx.ocir.io/idn2y0witocj/nativitiesbooks:inicial
         ports:
-        - containerPort: 8009
+        - containerPort: 3009
       imagePullSecrets:
     # enter the name of the secret you created  
       - name: ocirsecret

@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rnpweb
+  name: nativitiesbooks
 spec:
   selector:
     matchLabels:
-      app: rnpweb
+      app: nativitiesbooks
   replicas: 1 
   template: 
     metadata:
       labels:
-        app: rpnweb
+        app: nativitiesbooks
     spec:
       containers:
       - name: rpnweb
-        image: phx.ocir.io/idn2y0witocj/project01/rnpweb:inicial
+        image: phx.ocir.io/idn2y0witocj/nativitiesbooks:inicial
         ports:
         - containerPort: 8009
       imagePullSecrets:
@@ -28,11 +28,11 @@ metadata:
 spec:
  type: NodePort
  selector:
-   app: rnp-service
+   app: nativitiesbooks
  ports:
    - name: client
      protocol: TCP
-     port: 8009
+     port: 3009
      nodePort: 32081
  selector:
-   app: rnp-service
+   app: nativitiesbooks

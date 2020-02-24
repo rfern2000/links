@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rnpweb
+spec:
+  selector:
+    matchLabels:
+      app: rnpweb
+  replicas: 1 
+  template: 
+    metadata:
+      labels:
+        app: rpnweb
+    spec:
+      containers:
+      - name: rpnweb
+        image: phx.ocir.io/idn2y0witocj/project01/rnpweb:inicial
+        ports:
+        - containerPort: 8009
+      imagePullSecrets:
+    # enter the name of the secret you created  
+      - name: ocirsecret
+---
+apiVersion: v1
+kind: Service
+metadata:
+ name: rnp-service
+spec:
+ type: NodePort
+ selector:
+   app: rnp-service
+ ports:
+   - name: client
+     protocol: TCP
+     port: 8009
+     nodePort: 32081
+ selector:
+   app: rnp-service

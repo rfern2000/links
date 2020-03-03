@@ -1,6 +1,8 @@
 #
 set HOME="/home/alexander_"
 #oci ce cluster create-kubeconfig --cluster-id ocid1.cluster.oc1.phx.aaaaaaaaafqtszjsme2dimrqgnqwmylfgzsdintggq2domjtmcydaoldgyyg --file $HOME/.kube/config --region us-phoenix-1 --token-version 2.0.0 
+oci ce cluster create-kubeconfig --cluster-id ocid1.cluster.oc1.phx.aaaaaaaaafrgcnrugm2tiyzumm4gkmdbmjrdqmbvmm2gmnbrgcqtcmdegntg --file $HOME/.kube/config --region us-phoenix-1 --token-version 2.0.0 
+
 export KUBECONFIG=$HOME/.kube/config
-kubectl delete secret ocirsecret
-kubectl create secret docker-registry ocirsecret --docker-server=phx.ocir.io --docker-username='dn2y0witocj/oracleidentitycloudservice/alexander.q.quintero@oracle.com' --docker-password='VcuNC3+mp;E+2;R#bBgM' --docker-email='alexander.q.quintero@oracle.com'
+#kubectl delete secret ocirsecret
+#kubectl create secret docker-registry ocirsecret --docker-server=phx.ocir.io --docker-username='dn2y0witocj/oracleidentitycloudservice/alexander.q.quintero@oracle.com' --docker-password='VcuNC3+mp;E+2;R#bBgM' --docker-email='alexander.q.quintero@oracle.com'
